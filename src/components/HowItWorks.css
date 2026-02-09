@@ -1,0 +1,125 @@
+.how-it-works-section {
+    padding: 100px 0;
+    background: #f8f8f8;
+    position: relative;
+    z-index: 1;
+}
+
+.how-it-works-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.how-it-works-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.how-it-works-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.how-it-works-header p {
+    font-size: 1.25rem;
+    color: #666666;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.step-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+.step-number {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #e0e0e0;
+    min-width: 100px;
+    text-align: center;
+}
+
+.step-content {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.step-content:hover {
+    border-color: #000000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.step-content h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.step-content p {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+.step-connector {
+    position: absolute;
+    left: 50px;
+    top: 100%;
+    width: 2px;
+    height: 40px;
+    background: linear-gradient(to bottom, #000000, transparent);
+}
+
+@media (max-width: 768px) {
+    .how-it-works-section {
+        padding: 60px 0;
+    }
+
+    .how-it-works-header h2 {
+        font-size: 2rem;
+    }
+
+    .how-it-works-header p {
+        font-size: 1rem;
+    }
+
+    .step-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .step-number {
+        font-size: 3rem;
+        min-width: auto;
+    }
+
+    .step-content {
+        padding: 30px 20px;
+    }
+
+    .step-connector {
+        display: none;
+    }
+}
